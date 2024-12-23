@@ -14,7 +14,7 @@
 ## 文件結構
 
 ```
-project/
+Backend/
 ├── backend.py            # 主服務器代碼
 ├── uploaded_images/  # 上傳圖片存儲目錄
 ├── saliency_maps/    # Saliency Map 存儲目錄

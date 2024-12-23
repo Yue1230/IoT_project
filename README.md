@@ -52,8 +52,10 @@ project/
 
 - **主要程式碼**:
   - 缺陷檢測：[`PC/main.py`](https://github.com/Yue1230/IoT_project/tree/main/PC)
-  - 前端：[`camera_calibration.py`](https://github.com/WuRobber/CVMaterial/blob/main/DLCV/cameracalibration.ipynb)
-  - 後端：[backend.py](https://github.com/WuRobber/CVMaterial/blob/main/DLCV/CameraCalibration_srcdata)
+  - 前端：[`Frontend/src/App.js`](https://github.com/Yue1230/IoT_project/tree/main/Frontend/src/App/js)
+  - 後端：[backend.py](https://github.com/Yue1230/IoT_project/blob/main/Backend/backend.py)
+  - 樹莓派：[camera.py](https://github.com/Yue1230/IoT_project/blob/main/Rasberry%20Pi/camera.py)
+  [robot.py](https://github.com/Yue1230/IoT_project/blob/main/Rasberry%20Pi/robot.py)
   - 數字孿生：[Unity](https://reurl.cc/46jey3)
 
 - **報告文件**:
@@ -85,22 +87,11 @@ project/
   npm install
   npm start
   ```
-
----
-
-## 系統特性與優勢
-
-### **準確性與效率**
-- CNN 模型檢測準確率達 90%，分類成功率達 95%。
-- 機械手臂操作平均用時僅 2.5 秒。
-
-### **靈活性與適應性**
-- 支持多種缺陷類型的分類，適應動態生產場景。
-- 數位孿生技術增強系統透明度，支持即時監控與故障排查。
-
-### **成本效益**
-- 自動化操作顯著降低人力成本，每月節省約 54,940 元。
-
+### 3. **啟動後端**
+- 進入 `Backend` 資料夾，運行：
+  ```bash
+  python backend.py
+  ```
 ---
 
 ## 聯繫方式

@@ -1,6 +1,6 @@
-# 圖像分類與 Saliency Map 生成系統說明
+# 缺陷檢測及數據傳輸
 
-此系統基於 TensorFlow 和 OpenCV，實現圖像分類、Saliency Map 計算，並通過網路傳輸數據至伺服器與 Raspberry Pi。
+基於 TensorFlow 和 OpenCV，實現圖像分類、Saliency Map 計算，並通過網路傳輸數據至伺服器與 Raspberry Pi。
 
 ## 關鍵功能
 
@@ -25,7 +25,7 @@
 ## 文件結構
 
 ```
-project/
+PC/
 ├── model.h5                # 預訓練模型文件
 ├── main.py                 # 主程式
 ```

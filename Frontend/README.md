@@ -2,6 +2,8 @@
 
 此專案基於 React 開發，結合 WebSocket 技術，實現分類結果的即時展示與統計視覺化功能，適用於缺陷分類和 Saliency Map 的顯示。
 
+---
+
 ##  網頁連結
 Add front-end app: https://yue1230.github.io/IoT_project/
 
@@ -19,13 +21,16 @@ Add front-end app: https://yue1230.github.io/IoT_project/
 ## 文件結構
 
 ```
-project/
+Frontend/
+├── public/
 ├── src/
 │   ├── App.js        # 主應用邏輯
 │   ├── App.css       # 核心樣式
 │   ├── Chart.js      # 條形圖元件
 │   ├── PieChart.js   # 圓餅圖元件
 │   └── index.js      # React 進入點
+├── pakage-lock.json
+├── package.json 
 ```
 
 ---

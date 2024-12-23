@@ -11,7 +11,7 @@
 ## 文件結構
 
 ```
-project/
+Rasberry Pi/
 ├── camera.py    # 負責相機與物體檢測的邏輯
 ├── robot.py     # 負責機械手臂操作的邏輯
 ```
