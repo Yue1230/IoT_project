@@ -1,0 +1,179 @@
+/* 基礎變量 */
+:root {
+  --primary-color: #4bb6b6;
+  --hover-color: #5ccece;
+  --bg-dark: #1a1a2e;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 12px 40px rgba(75, 182, 182, 0.15);
+  --card-border: 1px solid rgba(75, 182, 182, 0.1);
+}
+
+/* 整體容器 */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.defect-description {
+  margin-top: 1rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+/* 新增容器: 最新分類圖片與 Saliency Map 並排顯示 */
+.image-saliency-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: flex-start; /* 垂直對齊 */
+  gap: 2rem; /* 區塊間隔 */
+  width: 100%;
+  flex-wrap: wrap; /* 當寬度不足時自動換行 */
+}
+
+/* 最新分類圖片和 Saliency Map 樣式 */
+.image-section,
+.saliency-map-section {
+  flex: 1; /* 平均分配寬度 */
+  min-width: 300px; /* 确保最小宽度相同 */
+  max-width: 500px; /* 确保最大宽度相同 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 20px;
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  backdrop-filter: blur(8px);
+}
+
+.image-section:hover,
+.saliency-map-section:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hover-shadow);
+  border-color: var(--primary-color);
+}
+
+/* 圖片樣式 */
+.image-container img {
+  border-radius: 12px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.image-container img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--hover-shadow);
+}
+
+/* 下方圖表容器 */
+.charts-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stats-section,
+.progress-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 20px;
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  backdrop-filter: blur(8px);
+}
+
+.stats-section:hover,
+.progress-section:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hover-shadow);
+  border-color: var(--primary-color);
+}
+
+/* 標題樣式 */
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: var(--transition);
+  transform: translateX(-50%);
+}
+
+.image-section:hover h2::after,
+.saliency-map-section:hover h2::after,
+.stats-section:hover h2::after,
+.progress-section:hover h2::after {
+  width: 100%;
+}
+
+/* 等待提示動畫 */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+p:not(.category-result) {
+  animation: pulse 1.5s infinite;
+  color: var(--primary-color);
+}
+
+/* 分類結果文字樣式 */
+.category-result {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: rgba(75, 182, 182, 0.1);
+  border-radius: 20px;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.category-result:hover {
+  background: rgba(75, 182, 182, 0.2);
+  transform: scale(1.05);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .image-saliency-container {
+    flex-direction: column; /* 小屏幕時堆疊顯示 */
+  }
+
+  .charts-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-section,
+  .progress-section {
+    width: 100%;
+  }
+}
