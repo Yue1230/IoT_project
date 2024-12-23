@@ -51,8 +51,8 @@ project/
 ## 資源鏈接與說明
 
 - **主要程式碼**:
-  - 缺陷檢測：[`PC/main.py`](https://github.com/Yue1230/IoT_project/tree/main/PC)
-  - 前端：[`Frontend/src/App.js`](https://github.com/Yue1230/IoT_project/tree/main/Frontend/src/App/js)
+  - 缺陷檢測：[`PC/main.py`](https://github.com/Yue1230/IoT_project/blob/main/PC/main.py)
+  - 前端：[`Frontend/src/App.js`](https://github.com/Yue1230/IoT_project/blob/main/Frontend/src/App.js)
   - 後端：[backend.py](https://github.com/Yue1230/IoT_project/blob/main/Backend/backend.py)
   - 樹莓派：[camera.py](https://github.com/Yue1230/IoT_project/blob/main/Rasberry%20Pi/camera.py)
   [robot.py](https://github.com/Yue1230/IoT_project/blob/main/Rasberry%20Pi/robot.py)
@@ -60,7 +60,7 @@ project/
 
 - **報告文件**:
   - 專案報告：[`IoT_project.pdf`]()
-  - Demo Video: [IoT_Project Video](https://drive.google.com/drive/u/1/folders/114OUhgpxgK_MGYP0qI7XfNt-EH8sHSOU)
+  - Demo Video: [IoT_Project Video](https://drive.google.com/file/d/10WVgfGhtrSy46MkUgc-l3Ab0iV0Z2K4a/view)
 ---
 
 ## 部署與啟動
