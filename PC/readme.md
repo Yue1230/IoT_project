@@ -26,7 +26,7 @@
 
 ```
 PC/
-├── modeltraining           # 續練模型程式碼
+├── modeltraining           # 訓練模型程式碼
 ├── model.h5                # 預訓練模型文件
 ├── main.py                 # 主程式
 ```
