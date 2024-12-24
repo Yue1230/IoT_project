@@ -53,14 +53,14 @@ project/
 - **主要程式碼**:
   - 缺陷檢測：[`PC/main.py`](https://github.com/Yue1230/IoT_project/blob/main/PC/main.py)
   - 前端：[`Frontend/src/App.js`](https://github.com/Yue1230/IoT_project/blob/main/Frontend/src/App.js)
-  - 後端：[backend.py](https://github.com/Yue1230/IoT_project/blob/main/Backend/backend.py)
-  - 樹莓派：[camera.py](https://github.com/Yue1230/IoT_project/blob/main/Rasberry%20Pi/camera.py)
-  [robot.py](https://github.com/Yue1230/IoT_project/blob/main/Rasberry%20Pi/robot.py)
-  - 數字孿生：[Unity](https://reurl.cc/46jey3)
+  - 後端：[`backend.py`](https://github.com/Yue1230/IoT_project/blob/main/Backend/backend.py)
+  - 樹莓派：[`camera.py`](https://github.com/Yue1230/IoT_project/blob/main/Rasberry%20Pi/camera.py)
+  [`robot.py`](https://github.com/Yue1230/IoT_project/blob/main/Rasberry%20Pi/robot.py)
+  - 數字孿生：[`Unity`](https://reurl.cc/46jey3)
 
 - **報告文件**:
-  - 專案報告：[`IoT_project.pdf`]()
-  - Demo Video: [IoT_Project Video](https://drive.google.com/file/d/10WVgfGhtrSy46MkUgc-l3Ab0iV0Z2K4a/view)
+  - 專案報告：[`IoT_project.pdf`](https://drive.google.com/file/d/1YnGLvVpFJfwUTbgSdwhTG09hL9BHeSRv/view?usp=sharing)
+  - Demo Video: [`IoT_Project Video`](https://drive.google.com/file/d/10WVgfGhtrSy46MkUgc-l3Ab0iV0Z2K4a/view)
 ---
 
 ## 部署與啟動
@@ -75,6 +75,7 @@ project/
 - 運行樹莓派腳本：
   ```bash
   python Rasberry\ Pi/camera.py
+  python Rasberry\ Pi/robot.py
   ```
 - 啟動電腦端分類與模型處理：
   ```bash
